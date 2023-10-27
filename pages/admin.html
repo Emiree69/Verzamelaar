@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="../style/admin.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1>Fill out the Champion information!</h1>
+        <form method="post" action="../pages/add.php" enctype="multipart/form-data">
+            <input type="file" id="image" name="image" placeholder="image" required><br>
+            <input type="text" id="name" name="name" placeholder="Champion Name"><br>
+            <input type="text" id="class" name="class" placeholder="class"><br>
+            <input type="text" id="releaseDate" name="releaseDate" placeholder="..-..-...."><br>
+            <input type="text" id="blueEssence" name="blueEssence" placeholder="blueEssence" required><br>
+            <input type="submit" name="submit">
+    </div>
+    </form>
+    <p id="message"></p>
+    </div>
+</body>
+
+</html>
